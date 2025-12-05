@@ -3,6 +3,7 @@ const btnCat = document.querySelector("button#btn-cat");
 const loading = document.querySelector("div#loading");
 const btnToggled = document.querySelector("button#toggled");
 const tittle = document.querySelector("h1#h1");
+const modeInfo = document.querySelector("span#mode-info");
 
 btnCat.addEventListener("click", requestCat);
 
@@ -10,11 +11,17 @@ btnToggled.addEventListener("click", () => {
   if (!btnToggled.classList.contains("toggled")) {
     btnToggled.classList.add("toggled");
     document.body.style.backgroundColor = "#13141d";
+    document.body.style.transition = "0.2s ease";
     h1.style.color = "#fff";
+    modeInfo.textContent = "Habilitar modo claro";
+    modeInfo.style.color = "#fff";
   } else {
     btnToggled.classList.remove("toggled");
     document.body.style.backgroundColor = "#fff";
+    document.body.style.transition = "0.2s ease";
     h1.style.color = "#000";
+    modeInfo.textContent = "Habilitar modo escuro";
+    modeInfo.style.color = "#000";
   }
 });
 

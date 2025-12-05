@@ -12,6 +12,12 @@ h1 {
   color: #333;
 }
 
+.mode-info{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
 .toggle-light {
   width: 120px;
   height: 40px;
